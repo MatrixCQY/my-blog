@@ -22,12 +22,12 @@ export default defineUserConfig({
   }),
   
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "/my-blog/favicon.ico" }],
   ],
 
   theme: hopeTheme({
     // Logo 配置
-    logo: "/logo.png",
+    logo: "/my-blog/logo.png",
     
     // 导航栏配置
     navbar: [
