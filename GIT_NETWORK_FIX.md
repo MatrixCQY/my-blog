@@ -93,7 +93,26 @@ git config --global http.maxRequestBuffer 100M
 
 ---
 
-### 方案 5：重试多次
+### 方案 5：临时禁用 SSL 验证（仅用于测试，不推荐）
+
+如果浏览器可以访问 GitHub，但命令行一直连接失败，可能是 SSL 证书验证问题。可以临时禁用 SSL 验证：
+
+```bash
+# 临时禁用 SSL 验证
+git config --global http.sslVerify false
+
+# 尝试推送
+git push -u origin main
+
+# 推送成功后，恢复 SSL 验证（重要！）
+git config --global http.sslVerify true
+```
+
+**⚠️ 警告：** 禁用 SSL 验证会降低安全性，仅用于测试。推送成功后应立即恢复。
+
+---
+
+### 方案 6：重试多次
 
 网络问题可能是暂时的，可以多试几次：
 
