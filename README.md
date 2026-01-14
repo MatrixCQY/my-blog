@@ -1,5 +1,7 @@
 # 个人学习笔记博客
 
+> 🌐 **访问网站**: [https://matrixcqy.github.io/my-blog/](https://matrixcqy.github.io/my-blog/)
+
 基于 VuePress 2.0 和 VuePress Theme Hope 构建的学习笔记博客网站。
 
 ## 功能特性
