@@ -4,8 +4,8 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 export default defineUserConfig({
   lang: "zh-CN",
-  title: "交易笔记",
-  description: "股票交易学习笔记博客",
+  title: "学习笔记",
+  description: "数学、代码和交易学习笔记博客",
   base: "/my-blog/",
 
   bundler: viteBundler({
@@ -37,6 +37,16 @@ export default defineUserConfig({
         icon: "home",
       },
       {
+        text: "数学笔记",
+        link: "/math/",
+        icon: "function",
+      },
+      {
+        text: "代码笔记",
+        link: "/code/",
+        icon: "code",
+      },
+      {
         text: "交易笔记",
         link: "/trading/",
         icon: "chart",
@@ -45,6 +55,8 @@ export default defineUserConfig({
 
     // 侧边栏配置
     sidebar: {
+      "/math/": "structure",
+      "/code/": "structure",
       "/trading/": "structure",
     },
 
