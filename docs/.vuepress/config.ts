@@ -6,7 +6,7 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "学习笔记",
   description: "数学和代码学习笔记博客",
-  base: "/",
+  base: "/my-blog/",
 
   bundler: viteBundler({
     viteOptions: {
