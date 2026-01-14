@@ -1,0 +1,31 @@
+// 自定义样式文件
+// 可以在这里添加自定义样式来复刻参考网站的外观
+
+// 主色调
+:root {
+  --theme-color: #3eaf7c;
+  --theme-color-light: #4abf8a;
+  --theme-color-dark: #2d8659;
+}
+
+// 代码块样式
+div[class*="language-"] {
+  border-radius: 6px;
+}
+
+// 侧边栏样式
+.sidebar {
+  font-size: 14px;
+}
+
+// 内容区域样式
+.theme-default-content {
+  max-width: 980px;
+}
+
+// 响应式设计
+@media (max-width: 719px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+}
